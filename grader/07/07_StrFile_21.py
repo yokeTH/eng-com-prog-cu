@@ -1,4 +1,3 @@
-from curses.ascii import islower
 from string import ascii_uppercase
 ln = input()
 
