@@ -6,12 +6,22 @@ for i in range(int(input())):
     order.append(ln[0])
 
 focus = input()
-same = {}
+same = set()
 find = False
+
+# print(persons)
 
 for visited in persons[focus]:
     for person in persons:
-        for city in persons[person]:
-            if visited[0] == city[0]:
-                print(person)
-                break
+        if person != focus:
+            for city in persons[person]:
+                if city[0] == visited[0]:
+                    same.add(person)
+                    break
+
+if len(same) == 0:
+    print('Not Found')
+else:
+    for e in order:
+        if e in same:
+            print(e)
