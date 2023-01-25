@@ -17,9 +17,7 @@ while len(ln) > 1:
             otas[ota]['score'] = int(score)
             otas[ota]['kami'] = name
     else:
-        otas[ota] = {}
-        otas[ota]['score'] = int(score)
-        otas[ota]['kami'] = name
+        otas[ota] = {'score': int(score), 'kami': name}
     ln = input()
 
 for k in otas:

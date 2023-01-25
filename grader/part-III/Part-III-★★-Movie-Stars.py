@@ -1,19 +1,16 @@
 movies = {}
-
 for _ in range(int(input())):
-    name, actor1, actor2 = input().split(', ')
-    if actor1 in movies:
-        movies[actor1].append(name)
-    else:
-        movies[actor1] = [name]
+    title, actor1, actor2 = input().split(', ')
+    if actor1 not in movies:
+        movies[actor1] = []
+    movies[actor1].append(title)
 
-    if actor2 in movies:
-        movies[actor2].append(name)
-    else:
-        movies[actor2] = [name]
+    if actor2 not in movies:
+        movies[actor2] = []
+    movies[actor1].append(title)
 
-for name in input().split(', '):
-    if name in movies:
-        print('{} -> {}'.format(name, ', '.join(movies[name])))
+for actor in input().split(', '):
+    if actor in movies:
+        print(actor+' -> '+', '.join(movies[actor]))
     else:
-        print('{} -> Not found'.format(name))
+        print(actor+' -> Not found')

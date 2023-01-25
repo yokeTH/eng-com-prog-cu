@@ -1,10 +1,12 @@
-lns = [input() for _ in range(int(input()))]
+lines = []
+for _ in range(int(input())):
+    lines.append(input())
 
-for ln in lns:
-    c = 0
-    for e in ln:
-        if e == '.':
-            c+=1
+for ln in lines:
+    dot = 0
+    for char in ln:
+        if char == '.':
+            dot+=1
         else:
             break
-    print(ln[int(c/2):])
+    print(ln[int(dot/2):])

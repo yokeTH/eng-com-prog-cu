@@ -1,0 +1,42 @@
+10
+Liverpool England
+ManCity England
+Bayern Germany
+Dortmund Germany
+Barcelona Spain
+Milan Italy
+PSG France
+Ajax Holland
+Real Spain
+Celtic Scotland
+Liverpool Dortmund Milan Ajax
+Liverpool Barcelona PSG Real
+ManCity Milan PSG Ajax Celtic
+ManCity Ajax SamyanFC Real Bayern
+q
+
+8 3 2
+Luffy faculty_a
+Nami faculty_a
+Sanji faculty_b
+Zoro faculty_c
+Robin faculty_c
+Chopper faculty_a
+Brook faculty_c
+Franky faculty_b
+Eren Nami Chopper Brook
+Anya Sanji Luffy
+Yaiba Franky
+Eren Anya
+Anya Eren Yaiba
+
+
+Ally America England Ukraine France
+Ally Russia China
+Enemy China America
+Enemy France Iran
+Enemy Iran Iraq
+Table America England Iceland France Iran Russia Iraq
+Table America England Russia
+Table America England Thailand Russia China Iran China Japan
+End
