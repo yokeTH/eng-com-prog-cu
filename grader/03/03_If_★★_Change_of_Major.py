@@ -1,7 +1,7 @@
 A = input().split()
 B = input().split()
 
-if (A[2] != 'A' and A[3] < 'D' and A[4] < 'D') or (B[2] != 'A' and B[3] < 'D' and B[4] < 'D'):
+if not((A[2] != 'A' and A[3] > 'C' and A[4] > 'C') and (B[2] != 'A' and B[3] > 'C' and B[4] > 'C')):
     print(None)
 elif A[2] != 'A':
     print(B[0])
@@ -20,4 +20,4 @@ elif A[4] < B[4]:
 elif A[4] > B[4]:
     print(B[0])
 else:
-    print('BOTH')
+    print('Both')
